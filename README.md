@@ -15,12 +15,12 @@ Given a set of input features such as gene, the type of mutation and the text th
 We have to be looking at different metrics in the problem before diagnosing the solution. We would be looking for some metrics such as log loss, accuracy and so on for different models and add those in tables so that we would be better able to decide the right kind of algorithm for the problem. 
 
 
-![](Images/2020-12-22%20(1).png)
 
+![](Images/2020-12-22%20(1).png)
 Here, we could see that the number of points that we have taken into consideration are 3321. We have just 2 features with the file that we have taken namely the ID and the Text associated with it. We see just 5 rows just to consider the head of the data frame. 
 
-![](Images/2020-12-22%20(2).png)
 
+![](Images/2020-12-22%20(2).png)
 We would be preprocessing the text and converting it into a mathematical vector so that those values could be given to the machine learning model. We first take into consideration the stop words which are very important in english. Later, we would be removing every special character as they do not give much meaning to the text. Here, we have removing characters apart from a-z, A-Z and 0-9. 
 
 
