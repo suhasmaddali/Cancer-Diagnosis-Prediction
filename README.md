@@ -44,8 +44,8 @@ We are also plotting the cumulative distribution of genes so that we take into c
 
 
 ## Naive Bayes
-![](Images/Naive_Bayes/2020-12-22(23).png)
-
+![](Images/Naive_Bayes/2020-12-22%20(23).png)
+We choose different values of alpha to check how well the model does on the test set. We can see that in the training phase, we tend to see that the model does very well for the alpha value of 0.1 and we might conclude soon that this is the best value of alpha for naive bayes. There might be 
 
 K Nearest Neighbor
 
