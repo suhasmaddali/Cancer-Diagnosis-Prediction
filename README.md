@@ -47,6 +47,8 @@ We are also plotting the cumulative distribution of genes so that we take into c
 ![](Images/Naive_Bayes/2020-12-22%20(23).png)
 We choose different values of alpha to check how well the model does on the test set. We can see that in the training phase, we tend to see that the model does very well for the alpha value of 0.1 and we might conclude soon that this is the best value of alpha for naive bayes. There might be chances, however, that the model is overfitting to the training data and it does not perform well on the test data as a result of high variance. Therefore, we must also check the log loss for the test set. At the bottom, we see that the best value of alpha is 0.1 as it not only reduces the log loss for the training set but also for the cross validation and the test set. By looking at the graph, therefore, we can conclude that the best value for the naive bayes classifier is 0.1 respectively. 
 
+![](Images/Naive_Bayes/2020-12-22%20(24).png)
+
 K Nearest Neighbor
 
 
