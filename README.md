@@ -54,6 +54,9 @@ Now, we would be testing the model with the best hyperparameters, in our case be
 We see the confusion matrix in the image above. We can see that most of the values for the test set belongong to class 1 were predicted to be class 1. We could see 58 such points. In addition to this, we also see that the naive bayes model was able to accurately predict the class 7 as there are a lot of correctly classified points for class 7 as can be seen in the confusion matrix. Nonetheless, there are a few misclassifications such as the class belonging to 7 but model predicting it to be 2. We can also see that the class that is actually 2 is predicted to be class 7. We understand from this information that there is a confusion for the model in terms of predicted class 2 and class 7. Therefore, we'll have to address this issue by using other machine learning models later and then, come to a conclusion. 
 
 ![](Images/Naive_Bayes/2020-12-22%20(26).png)
+We see the precision and recall of the matrix and we used a confusion matrix just to see how well the model did in terms of these metrics. Precision gives us what proportion of the true positives identifications were actually correct. On the other hand, recall gives us the proportion of actual positives that were identified correctly. 
+
+
 
 
 K Nearest Neighbor
