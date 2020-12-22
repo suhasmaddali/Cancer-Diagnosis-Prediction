@@ -1,4 +1,7 @@
 # Cancer-Diagnosis-Prediction
+
+This project was developed with the help of AppliedAI team based in India. 
+
 Based on the given set of features such as gene, mutation and text associated with it, the machine learning models would predict the type of cancer that a person would have under 9 classes. 
 
 
