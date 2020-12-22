@@ -60,6 +60,9 @@ We see the precision and recall of the matrix and we used a confusion matrix jus
 We find an interesting image above. We see some of the important words those really helped the model in predicting the class. We find that these are the key words for specific classes to be true. Thus, the naive bayes model would use its ability to classify text and see if these words are present to come to a conclusion that there is a possibility of a patient suffering from cancer with class 4. 
 
 
+![](Images/Naive_Bayes/2020-12-22%20(28).png)
+
+
 
 
 
