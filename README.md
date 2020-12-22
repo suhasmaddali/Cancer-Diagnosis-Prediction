@@ -15,6 +15,8 @@ Given a set of input features such as gene, the type of mutation and the text th
 We have to be looking at different metrics in the problem before diagnosing the solution. We would be looking for some metrics such as log loss, accuracy and so on for different models and add those in tables so that we would be better able to decide the right kind of algorithm for the problem. 
 
 
+![](Images/Naive_Bayes/2020-12-22.png)
+We have a file that contains 3321 data point and 4 features. We are given the ID, Gene, Variation and Class of cancer. For more information to read the description, you can open the actual python notebook file where everything is described fully. 
 
 ![](Images/2020-12-22%20(1).png)
 Here, we could see that the number of points that we have taken into consideration are 3321. We have just 2 features with the file that we have taken namely the ID and the Text associated with it. We see just 5 rows just to consider the head of the data frame. 
@@ -61,7 +63,7 @@ We find an interesting image above. We see some of the important words those rea
 
 
 ![](Images/Naive_Bayes/2020-12-22%20(28).png)
-
+We also see from the image that there are a few points that are incorrectly classified. We find that these points were classified incorrectly due to the presence of a few words that were the deciding factors for the algorithm to conclude incorrectly. This might be due to these same words being present in different classes, leading to the confusion of the machine learning naive bayes model. We can also see the predicted probabilities of the model for each class and then determining based on the mathematical value, the class of cancer. 
 
 
 
