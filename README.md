@@ -56,6 +56,7 @@ We see the confusion matrix in the image above. We can see that most of the valu
 ![](Images/Naive_Bayes/2020-12-22%20(26).png)
 We see the precision and recall of the matrix and we used a confusion matrix just to see how well the model did in terms of these metrics. Precision gives us what proportion of the true positives identifications were actually correct. On the other hand, recall gives us the proportion of actual positives that were identified correctly. 
 
+![](Images/Naive_Bayes/2020-12-22%20(27).png)
 
 
 
