@@ -50,6 +50,9 @@ We choose different values of alpha to check how well the model does on the test
 ![](Images/Naive_Bayes/2020-12-22%20(24).png)
 Now, we would be testing the model with the best hyperparameters, in our case being 0.1 for the alpha value. We use a multinomial naive bayes classifier and use the training set with the labels to it. We use predict the probabilities rather just just get a discrete 1 or a 0. We see that the log loss for the model is 1.28 (approx) respectively. We also see that the misclassification rate of the model with alpha being equal to 0.1 is 0.39 (approx). We can conclude that the model was able to predict the output for the test set accurately 60 percent of the time which is not bad when we look at the complexity of the problem at hand. 
 
+![](Images/Naive_Bayes/2020-12-22%20(25).png)
+
+
 K Nearest Neighbor
 
 
