@@ -27,3 +27,8 @@ We would be preprocessing the text and converting it into a mathematical vector 
 We would be dividing the whole data into train, cross validation and test set respectively. We must ensure that the machine learning model must do well not only on the cross validation set but also the test set. Thus, we would be dividing the entire data into train, cross validation and test set. 
 After dividing, we see that the total number of points on the training data are 2124. The number of data points on the test data are 665 and the points in the cross validation data is 532. 
 
+![](Images/2020-12-22%20(5).png)
+We could see from the diagram that most of the data points in the training data contain class 7 as their output. We are able to see the distribution of the data with respect to the class of cancer. 
+When we see the distribution of the classes on the test data, we also see that most of the test data contain output as class 7. Therefore, histograms could be used to see how the data is distributed. 
+
+
