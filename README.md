@@ -24,6 +24,6 @@ Here, we could see that the number of points that we have taken into considerati
 We would be preprocessing the text and converting it into a mathematical vector so that those values could be given to the machine learning model. We first take into consideration the stop words which are very important in english. Later, we would be removing every special character as they do not give much meaning to the text. Here, we are removing characters apart from a-z, A-Z and 0-9. In addition to this, we are lowecasing the words and removing all the stop words such as "the, and" and so on. We also must delete the rows that do not contain any text. The code in the second cell would do exactly do that. We would be printing the id number of the row that does not contain any text. If a row contains text, we would store those valeus in a new variable. 
 
 ![](Images/2020-12-22%20(3).png)
-
-
+We would be dividing the whole data into train, cross validation and test set respectively. We must ensure that the machine learning model must do well not only on the cross validation set but also the test set. Thus, we would be dividing the entire data into train, cross validation and test set. 
+After dividing, we see that the total number of points on the training data are 2124. The number of data points on the test data are 665 and the points in the cross validation data is 532. 
 
