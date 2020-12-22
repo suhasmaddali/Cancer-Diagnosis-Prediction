@@ -43,3 +43,10 @@ We would also take a look at the index of genes that are associated with the dat
 We are also plotting the cumulative distribution of genes so that we take into consideration the frequency of the genes and add them with different types of genes to get a clear picture. 
 
 
+## Naive Bayes
+
+
+K Nearest Neighbor
+
+
+
