@@ -8,7 +8,7 @@ Based on the given set of features such as gene, mutation and text associated wi
 The machine learning models that were used in the process of prediction were K Nearest Neighbors, Linear Support Vector Machines (SVM), Logistic Regression, Stacking Classifer, Voting Classifier and Random Forests Classifiers. 
 
 
-Given a set of input features such as gene, the type of mutation and the text that is associated with the gene and the mutation, the machine learning model could classify the changes of a person to suffer from cancer. In addition to this, it would also give an indication of the type of class of the cancer from 1 to 9. 
+Given a set of input features such as gene, the type of mutation and the text that is associated with the gene and the mutation, the machine learning model could classify the chances of a person to suffer from cancer. In addition to this, it would also give an indication of the type of class of the cancer from 1 to 9. 
 
 
 
