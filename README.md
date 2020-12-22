@@ -21,7 +21,9 @@ Here, we could see that the number of points that we have taken into considerati
 
 
 ![](Images/2020-12-22%20(2).png)
-We would be preprocessing the text and converting it into a mathematical vector so that those values could be given to the machine learning model. We first take into consideration the stop words which are very important in english. Later, we would be removing every special character as they do not give much meaning to the text. Here, we are removing characters apart from a-z, A-Z and 0-9. In addition to this, we are lowecasing the words and removing all the stop words such as "the, and" and so on. We also must delete the rows that do not contain any text. The code in the second cell would do exactly do that. We would be printing the id number of the row that does not contain any text. If a row contains text, we would store those valeus in a new variable. 
+We would be preprocessing the text and converting it into a mathematical vector so that those values could be given to the machine learning model. We first take into consideration the stop words which are very important in english. Later, we would be removing every special character as they do not give much meaning to the text. Here, we are removing characters apart from a-z, A-Z and 0-9. In addition to this, we are lowecasing the words and removing all the stop words such as "the, and" and so on. We also must delete the rows that do not contain any text. The code in the second cell would do exactly do that. We would be printing the id number of the row that does not contain any text. If a row contains text, we would store those valeus in a new variable.
+
+
 
 ![](Images/2020-12-22%20(3).png)
 We would be dividing the whole data into train, cross validation and test set respectively. We must ensure that the machine learning model must do well not only on the cross validation set but also the test set. Thus, we would be dividing the entire data into train, cross validation and test set. 
@@ -35,5 +37,9 @@ When we see the distribution of the classes on the test data, we also see that m
 We would be first using a random model as our initial model which could be used as a benchmark for the other machine learning models. If a machine learning model has a log loss higher than the random model, it would be better not use that model as it does not even perform better than a random model which gives random set of values of y for prediction. We are also using a confusion matrix where on the y axis, we have the actual class and on the x axis, we have the predicted class. Ideally, we must have a diagonal line between the predicted class and the actual class so that there is no misclassification between classes. 
 ![](Images/2020-12-22%20(8).png)
 We must also take into consideration precision and recall as they are some of the important metrics which we cannot take for granted. Accuracy cannot be a reliable metric to evaluate the performance of a machine learning model in classification problems. For example, if we have a test set that contains only one output (either 1 or 0) and we use a model that would return just one value without performing machine learning operations, the accuracy of the model would be high if we consider it as a metric. However, the model does not perform any machine learning operations but just returning 1 or 0. Thus, we can say that accuracy is not the best reliable metric for classification problem. After considering recall and precision, however, we could evaluate the model much better. The diagram shows precision and recall confusion matrix respectively. 
+![](Images/2020-12-22%20(9).png)
+We would also take a look at the index of genes that are associated with the data. Here, we find that as the index of the gene increases, their frequency decreases. We are plotting a histogram just to see how the data is spread. 
+![](Images/2020-12-22%20(10)/png)
+We are also plotting the cumulative distribution of genes so that we take into consideration the frequency of the genes and add them with different types of genes to get a clear picture. 
 
 
