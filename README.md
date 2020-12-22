@@ -9,3 +9,5 @@ Given a set of input features such as gene, the type of mutation and the text th
 
 
 ![download](https://user-images.githubusercontent.com/53935116/63597078-f9cffa80-c5ff-11e9-80f1-b4bef99ba2d9.jpg)
+
+We have to be looking at different metrics in the problem before diagnosing the solution. We would be looking for some metrics such as log loss, accuracy and so on for different models and add those in tables so that we would be better able to decide the right kind of algorithm for the problem. 
