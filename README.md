@@ -44,6 +44,7 @@ We are also plotting the cumulative distribution of genes so that we take into c
 
 
 ## Naive Bayes
+![](Images/Naive_Bayes/2020-12-22(23).png)
 
 
 K Nearest Neighbor
