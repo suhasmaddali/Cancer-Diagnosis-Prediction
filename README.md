@@ -102,6 +102,8 @@ We have also plotted the precision and recall for the linear support vector mach
 ![](Images/2020-12-22%20(40).png)
 We would also be taking a look at the feature importance and see to it as to why the classification is done depending on the features. We see that there are a few features that led the algorithm to correctly predict the output. Thus, we must also take these features into consideration when we are trying to reduce the dimensions of the matrix that we are giving to the machine learning model. 
 ![](Images/2020-12-22%20(41).png)
+We would also consider the incorrectly classified points and see the features that were responsible for the algorithm to misclassify. We see a few features that were responsible for the algorithm to not classify correctly. We were able to understand the features and we can try to eliminate or modify those features so that the algorith would perform better by using feature engineering. 
+
 
 
 
