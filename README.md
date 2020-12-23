@@ -81,3 +81,16 @@ We have plotted the confusion matrix just to see how the predicted values and th
 ![](Images/2020-12-22%20(32).png)
 We have also plotted the precision and recall matrix for the K nearest neighbor algorithm. We see that there is a smooth diagonal in the case of precision matrix. In the recall matrix, however, we see that there is a bit of a misclassification for the class 8 which was classified as class 7. 
 
+## Logistic Regression
+![](Images/2020-12-22%20(33).png)
+We are currently using logistic regression model. Here we could see that there are small values to large values of alpha so the range of alpha values is large. We would be testing the log loss with different values of alpha for the training set and see how well the model does on the test set. We see that for the value of alpha = 0.001, the train log loss is about 0.69 respectively. Moreover, the model does not overfit in the case of the value of alpha being equal to 0.001 respectively. We see that the log loss for the cross validation and test set is 1.15 (approx) and 1.11 (approx) respectively. Therefore the log loss is pretty low for this model. 
+
+![](Images/2020-12-22%20(34).png)
+We would now be testing the output with the value of alpha being equal to 0.001 respectively. 
+![](Images/2020-12-22%20(35).png)
+![](Images/2020-12-22%20(36).png)
+![](Images/2020-12-22%20(37).png)
+
+
+
+
