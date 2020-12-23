@@ -96,8 +96,11 @@ We would also be looking at the correctly classified points and understand the f
 On the other hand in the above diagram, we see there are some incorrectly classified points. We see that due to the presence of a few features and words in the text, the model was not able to classify accurately the actual output. Therefore, we would look at these features and understand them so that in the future, we might either modify the values so that they give the correct output. 
 
 ![](Images/2020-12-22%20(38).png)
+We use a classifier known as linear support vector machines. Here we find the values of C to get the best output. We have taken the values of C range to be large so that we see the deviation from the output and select the best hyperparameter. We find the best value of C is 0.0001 both on the trainig set and the test set. We find that with this value, the model does not either overfit or underfit. We can conclude that the model is doing well with the value of C being equal to 0.0001 respectively. 
 ![](Images/2020-12-22%20(39).png)
+We have also plotted the precision and recall for the linear support vector machines model. We see that the model does well in classifying most of the classes of cancer accurately. However, it is still not that good in terms of clasifying the class 2 as it is confused and is misclassifying it to be class 7. 
 ![](Images/2020-12-22%20(40).png)
+We would also be taking a look at the feature importance and see to it as to why the classification is done depending on the features. We see that there are a few features that led the algorithm to correctly predict the output. Thus, we must also take these features into consideration when we are trying to reduce the dimensions of the matrix that we are giving to the machine learning model. 
 ![](Images/2020-12-22%20(41).png)
 
 
