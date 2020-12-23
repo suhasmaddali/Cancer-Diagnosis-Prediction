@@ -68,7 +68,8 @@ We also see from the image that there are a few points that are incorrectly clas
 
 
 
-K Nearest Neighbor
-
+## K Nearest Neighbor
+![](Images/Naive_Bayes/2020-12-22%20(29).png)
+We would be looking at an alternative model called K nearest neighbour. In this algorithm, we would be deciding the hyperparameter k which is nothing but the number of nearest neighbours which would be used for the prediction of the class of cancer. Therefore, we would be doing hyperparameter tuning and getting the accuracy of the model for different values of alpha before coming to the conclusion. We can see from the image that for the value of alpha = 5, we get the best accuracy for the training set. However, we are not sure whether the same model would be able to get the best accuracy for the test set. It turns out that the model is not overfitting and we are able to select the best value of alpha. For the value of alpha = 5, we are able to get the log loss in the test set to be 1.06 (approx) respectively.  
 
 
