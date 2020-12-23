@@ -72,4 +72,12 @@ We also see from the image that there are a few points that are incorrectly clas
 ![](Images/2020-12-22%20(29).png)
 We would be looking at an alternative model called K nearest neighbour. In this algorithm, we would be deciding the hyperparameter k which is nothing but the number of nearest neighbours which would be used for the prediction of the class of cancer. Therefore, we would be doing hyperparameter tuning and getting the accuracy of the model for different values of alpha before coming to the conclusion. We can see from the image that for the value of alpha = 5, we get the best accuracy for the training set. However, we are not sure whether the same model would be able to get the best accuracy for the test set. It turns out that the model is not overfitting and we are able to select the best value of alpha. For the value of alpha = 5, we are able to get the log loss in the test set to be 1.06 (approx) respectively.  
 
+![](Images/2020-12-22%20(30).png)
+We have used the value of alpha = 5 for predictions for the unknown data set (test set). We see that the log loss is 1.03 (approx) respectively. In addition to that, the misclassification rate is about 0.34 (approx) respectively. This model performed better than the Naive Bayes Model that we have considered above. It is able to predict about 66 percent of the times the type of cancer that a patient can have depending on the text and the gene associated with it. 
+
+![](Images/2020-12-22%20(31).png)
+We have plotted the confusion matrix just to see how the predicted values and the actual values intersect. We see that the model is able to very accurately classify the chance of a cancer of class 7 as we can see in the image above. We also see that it is slightly better in terms of predicting the chances of a cancer with the class 4. However, there are a few instances where the model has misclassified. For example, when we look at the actual class 2, the model mostly predicted them to be class 7. Therefore, this model might not be the best model yet as it is misclassifying the class 2 with class 7. 
+
+![](Images/2020-12-22%20(32).png)
+We have also plotted the precision and recall matrix for the K nearest neighbor algorithm. We see that there is a smooth diagonal in the case of precision matrix. In the recall matrix, however, we see that there is a bit of a misclassification for the class 8 which was classified as class 7. 
 
