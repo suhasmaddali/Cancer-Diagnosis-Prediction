@@ -86,10 +86,15 @@ We have also plotted the precision and recall matrix for the K nearest neighbor 
 We are currently using logistic regression model. Here we could see that there are small values to large values of alpha so the range of alpha values is large. We would be testing the log loss with different values of alpha for the training set and see how well the model does on the test set. We see that for the value of alpha = 0.001, the train log loss is about 0.69 respectively. Moreover, the model does not overfit in the case of the value of alpha being equal to 0.001 respectively. We see that the log loss for the cross validation and test set is 1.15 (approx) and 1.11 (approx) respectively. Therefore the log loss is pretty low for this model. 
 
 ![](Images/2020-12-22%20(34).png)
-We would now be testing the output with the value of alpha being equal to 0.001 respectively. We find that the log loss for the test set is equal to 1.15 and the misclassification rate is about 36 percent. Therefore, the model is able to accurately predict the type of cancer in a patient with an accuracy of about 66 percent. This would give us the
+We would now be testing the output with the value of alpha being equal to 0.001 respectively. We find that the log loss for the test set is equal to 1.15 and the misclassification rate is about 36 percent. Therefore, the model is able to accurately predict the type of cancer in a patient with an accuracy of about 66 percent. We see in the confusion matrix that the class that belongs to class 2 is still being predicted to be class 7. We could not completely eliminate this error in the output with the change to logistic regression model. The model performed well overall in terms of precision and recall. However, there are a few more things that the model should be before becoming a perfect model. 
 ![](Images/2020-12-22%20(35).png)
+We see the precision matrix and recall matrix in the above diagram. We can say that it is doing pretty well in both with a few points being misclassified. In addition, we see that the model was able to perform well on the test set in both the precision and recall and there is no value of 0 in terms of predicted class 8 which implies that it is a good model. 
+
 ![](Images/2020-12-22%20(36).png)
+We would also be looking at the correctly classified points and understand the features present in the text that made them correctly classified. Therefore, we could be able to also interpret the model and the model is transparent to a large extent as we are able to see the features that made the output correct.
 ![](Images/2020-12-22%20(37).png)
+On the other hand in the above diagram, we see there are some incorrectly classified points. We see that due to the presence of a few features and words in the text, the model was not able to classify accurately the actual output. Therefore, we would look at these features and understand them so that in the future, we might either modify the values so that they give the correct output. 
+
 
 
 
