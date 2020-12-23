@@ -95,6 +95,12 @@ We would also be looking at the correctly classified points and understand the f
 ![](Images/2020-12-22%20(37).png)
 On the other hand in the above diagram, we see there are some incorrectly classified points. We see that due to the presence of a few features and words in the text, the model was not able to classify accurately the actual output. Therefore, we would look at these features and understand them so that in the future, we might either modify the values so that they give the correct output. 
 
+![](Images/2020-12-22%20(38).png)
+![](Images/2020-12-22%20(39).png)
+![](Images/2020-12-22%20(40).png)
+![](Images/2020-12-22%20(41).png)
+
+
 
 
 
