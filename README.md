@@ -86,7 +86,7 @@ We have also plotted the precision and recall matrix for the K nearest neighbor 
 We are currently using logistic regression model. Here we could see that there are small values to large values of alpha so the range of alpha values is large. We would be testing the log loss with different values of alpha for the training set and see how well the model does on the test set. We see that for the value of alpha = 0.001, the train log loss is about 0.69 respectively. Moreover, the model does not overfit in the case of the value of alpha being equal to 0.001 respectively. We see that the log loss for the cross validation and test set is 1.15 (approx) and 1.11 (approx) respectively. Therefore the log loss is pretty low for this model. 
 
 ![](Images/2020-12-22%20(34).png)
-We would now be testing the output with the value of alpha being equal to 0.001 respectively. 
+We would now be testing the output with the value of alpha being equal to 0.001 respectively. We find that the log loss for the test set is equal to 1.15 and the misclassification rate is about 36 percent. Therefore, the model is able to accurately predict the type of cancer in a patient with an accuracy of about 66 percent. This would give us the
 ![](Images/2020-12-22%20(35).png)
 ![](Images/2020-12-22%20(36).png)
 ![](Images/2020-12-22%20(37).png)
