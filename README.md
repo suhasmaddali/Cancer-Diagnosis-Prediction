@@ -1,4 +1,4 @@
-# Cancer-Diagnosis-Prediction
+# Cancer Diagnosis Prediction
 
 This project was developed with the help of AppliedAI team based in India. 
 
