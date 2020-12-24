@@ -102,7 +102,22 @@ We have also plotted the precision and recall for the linear support vector mach
 ![](Images/2020-12-22%20(40).png)
 We would also be taking a look at the feature importance and see to it as to why the classification is done depending on the features. We see that there are a few features that led the algorithm to correctly predict the output. Thus, we must also take these features into consideration when we are trying to reduce the dimensions of the matrix that we are giving to the machine learning model. 
 ![](Images/2020-12-22%20(41).png)
-We would also consider the incorrectly classified points and see the features that were responsible for the algorithm to misclassify. We see a few features that were responsible for the algorithm to not classify correctly. We were able to understand the features and we can try to eliminate or modify those features so that the algorith would perform better by using feature engineering. 
+We would also consider the incorrectly classified points and see the features that were responsible for the algorithm to misclassify. We see a few features that were responsible for the algorithm to not classify correctly. We were able to understand the features and we can try to eliminate or modify those features so that the algorithm would perform better by using feature engineering.
+
+![](Images/2020-12-22%20(42).png)
+We would now be using the random forest classifier. Here, we would consider the depth of the tree as the hyperparameter and decided the values of it such that the model does not overfit or underfit. We would be printing the log loss values for specific values of the depth of the tree. 
+![](Images/2020-12-22%20(43).png)
+We can see from the image that the number of estimators when equal to 2000 would give the best results for the cross validation and the test set. We get a value of about 1.18 for the test set respectively. Therefore, we would be using that value for the prediction of the output. 
+![](Images/2020-12-22%20(44).png)
+We see that the misclassification rate is about 0.43 respectively. What this means is that the model is able to accurately predict the type of cancer with an accuracy of about 57 percent. We see that this model does not perform as well as the models that we have seen above. But it would be better to see where there are mistakes just to get an understanding of how the algorithm performed. There is again some misclassification of the class points that belong to class 2. They were again predicted to be class 7 which is a mistake. We also see that most of the class 7 points were accurately predicted. In addition, we see that there is a misclassification of the points which belong to class 4 but were classified as class 1. This trend is not followed by the previous classes and this accounts to mostly the misclassification. 
+![](Images/2020-12-22%20(45).png)
+We also see the precision and recall matrix of the random forest classifier for cancer diagnosis prediction data set. We see that there are a few values which are blank. Therefore, we can tell that out of all the points that contain class 3 and class 8 as the output label, it was not able to accurately classify one positive case correctly. Therefore, this model cannot actually predict the presence of cancer of class 3 and class 7 as can be seen in the precision matrix. However, there is not a big problem with the recall matrix. We see that the model did quite well in terms of the recall matrix respectively. 
+![](Images/2020-12-22%20(46).png)
+We see that there are a few features that were responsible for the model to predict the classes and we see them in the above image. We could get a rough idea about these features and understand why the algorithm gave a class. Therefore, there is feature importance for random forest classifier. 
+![](Images/2020-12-22%20(47).png)
+We see that there are few incorrectly classified points and we find a few features that were as a result of the incorrectly classified points. 
+
+
 
 
 
