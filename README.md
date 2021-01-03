@@ -1,5 +1,5 @@
 # Cancer Diagnosis Prediction
-
+## Introduction
 This project was developed with the help of AppliedAI team based in India. 
 
 Based on the given set of features such as gene, mutation and text associated with a given data, the machine learning models would predict the type of cancer that a person would have under 9 classes. 
@@ -11,10 +11,11 @@ The machine learning models that were used in the process of prediction were K N
 Given a set of input features such as gene, the type of mutation and the text that is associated with the gene and the mutation, the machine learning model could classify the chances of a person to suffer from cancer. In addition to this, it would also give an indication of the type of class of the cancer from 1 to 9. 
 
 
-
+## Metrics
 We have to be looking at different metrics in the problem before diagnosing the solution. We would be looking for some metrics such as log loss, accuracy and so on for different models and add those in tables so that we would be better able to decide the right kind of algorithm for the problem. 
 
-
+## Reading the data
+We would be reading the csv (comma separated file) data and loading the data into a variable. We would then we preprocessing the data and converting the entire data in the form of mathematical vectors. These vectors could be given to the machine learning model for analysis and the output. 
 ![](Images/Naive_Bayes/2020-12-22.png)
 We have a file that contains 3321 data point and 4 features. We are given the ID, Gene, Variation and Class of cancer. For more information to read the description, you can open the actual python notebook file where everything is described fully. 
 
