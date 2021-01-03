@@ -146,7 +146,7 @@ We see that there are few incorrectly classified points and we find a few featur
 
 ![](Images/2020-12-24.png)
 
-## 4.1 Conclusion 
+## 4. Conclusion 
 We see in the table above that there are a few modifications to the data and adding specific features to improve the accuracy of the model. We find that K Nearest Neighbours (KNN) performed the best compared to the other models without adding any new features to the data set. We also see that we have added tfidf vectors to the text. We see that for the linear support vector machines with the addition of the TFIDF vectors, we find there is a reduction in the error by about 2 percent compared to the svm without tfidf vectors. We also see there is a reduction in error when we add the tfidf vectors for the logistic regression model. 
 
 
