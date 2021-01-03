@@ -1,5 +1,5 @@
 # Cancer Diagnosis Prediction
-## Introduction
+## 1.1 Introduction
 This project was developed with the help of AppliedAI team based in India. 
 
 Based on the given set of features such as gene, mutation and text associated with a given data, the machine learning models would predict the type of cancer that a person would have under 9 classes. 
@@ -11,10 +11,31 @@ The machine learning models that were used in the process of prediction were K N
 Given a set of input features such as gene, the type of mutation and the text that is associated with the gene and the mutation, the machine learning model could classify the chances of a person to suffer from cancer. In addition to this, it would also give an indication of the type of class of the cancer from 1 to 9. 
 
 
-## Metrics
+## 1.2 Metrics
 We have to be looking at different metrics in the problem before diagnosing the solution. We would be looking for some metrics such as log loss, accuracy and so on for different models and add those in tables so that we would be better able to decide the right kind of algorithm for the problem. 
 
-## Reading the data
+## Table of Contents
+### 1. Cancer Diagnosis Prediction 
+##### 1.1 Introduction
+##### 1.2 Metrics
+### 2. Analysing the data
+##### 2.1 Reading the data 
+##### 2.2 Preprocessing the text
+##### 2.3 Dividing the data 
+##### 2.4 Distribution of data 
+##### 2.5 Using Random Model 
+##### 2.6 Precision and Recall 
+##### 2.7 Histogram 
+### 3. Machine Learning Models 
+##### 3.1 Naive Bayes
+##### 3.2 K Nearest Neighbors (KNN) 
+##### 3.3 Logistic Regression
+##### 3.4 Support Vector Machines (SVM) 
+##### 3.5 Random Forest Classifier 
+### 4. Conclusion 
+
+
+## 2.1 Reading the data
 We would be reading the csv (comma separated file) data and loading the data into a variable. We would then we preprocessing the data and converting the entire data in the form of mathematical vectors. These vectors could be given to the machine learning model for analysis and the output. 
 ![](Images/Naive_Bayes/2020-12-22.png)
 We have a file that contains 3321 data point and 4 features. We are given the ID, Gene, Variation and Class of cancer. For more information to read the description, you can open the actual python notebook file where everything is described fully. 
@@ -22,33 +43,33 @@ We have a file that contains 3321 data point and 4 features. We are given the ID
 ![](Images/2020-12-22%20(1).png)
 Here, we could see that the number of points that we have taken into consideration are 3321. We have just 2 features with the file that we have taken namely the ID and the Text associated with it. We see just 5 rows just to consider the head of the data frame. 
 
-## Preprocessing the text 
+## 2.2 Preprocessing the text 
 ![](Images/2020-12-22%20(2).png)
 We would be preprocessing the text and converting it into a mathematical vector so that those values could be given to the machine learning model. We first take into consideration the stop words which are very important in english. Later, we would be removing every special character as they do not give much meaning to the text. Here, we are removing characters apart from a-z, A-Z and 0-9. In addition to this, we are lowecasing the words and removing all the stop words such as "the",   "and" and so on. We also must delete the rows that do not contain any text. The code in the second cell would do exactly do that. We would be printing the id number of the row that does not contain any text. If a row contains text, we would store those valeus in a new variable.
 
 
-## Dividing the data 
+## 2.3 Dividing the data 
 ![](Images/2020-12-22%20(3).png)
 We would be dividing the whole data into train, cross validation and test set respectively. We must ensure that the machine learning model must do well not only on the cross validation set but also the test set. Thus, we would be dividing the entire data into train, cross validation and test set. 
 After dividing, we see that the total number of points on the training data are 2124. The number of data points on the test data are 665 and the points in the cross validation data is 532. 
-## Distribution of data
+## 2.4 Distribution of data
 ![](Images/2020-12-22%20(5).png)
 We could see from the diagram that most of the data points in the training data contain class 7 as their output. We are able to see the distribution of the data with respect to the class of cancer. 
 When we see the distribution of the classes on the test data, we also see that most of the test data contain output as class 7. Therefore, histograms could be used to see how the data is distributed. 
-## Using random model 
+## 2.5 Using random model 
 ![](Images/2020-12-22%20(7).png)
 We would be first using a random model as our initial model which could be used as a benchmark for the other machine learning models. If a machine learning model has a log loss higher than the random model, it would be better not use that model as it does not even perform better than a random model which gives random set of values of y for prediction. We are also using a confusion matrix where on the y axis, we have the actual class and on the x axis, we have the predicted class. Ideally, we must have a diagonal line between the predicted class and the actual class so that there is no misclassification between classes. 
 ![](Images/2020-12-22%20(8).png)
-## Precision and Recall 
+## 2.6 Precision and Recall 
 We must also take into consideration precision and recall as they are some of the important metrics which we cannot take for granted. Accuracy cannot be a reliable metric to evaluate the performance of a machine learning model in classification problems. For example, if we have a test set that contains only one output (either 1 or 0) and we use a model that would return just one value without performing machine learning operations, the accuracy of the model would be high if we consider it as a metric. However, the model does not perform any machine learning operations but just returning 1 or 0. Thus, we can say that accuracy is not the best reliable metric for classification problem. After considering recall and precision, however, we could evaluate the model much better. The diagram shows precision and recall confusion matrix respectively. 
-## Histogram 
+## 2.7 Histogram 
 ![](Images/2020-12-22%20(9).png)
 We would also take a look at the index of genes that are associated with the data. Here, we find that as the index of the gene increases, their frequency decreases. We are plotting a histogram just to see how the data is spread. 
 ![](Images/2020-12-22%20(10)/png)
 We are also plotting the cumulative distribution of genes so that we take into consideration the frequency of the genes and add them with different types of genes to get a clear picture. 
 
 
-## Naive Bayes
+## 3.1 Naive Bayes
 ![](Images/Naive_Bayes/2020-12-22%20(23).png)
 We choose different values of alpha to check how well the model does on the test set. We can see that in the training phase, we tend to see that the model does very well for the alpha value of 0.1 and we might conclude soon that this is the best value of alpha for naive bayes. There might be chances, however, that the model is overfitting to the training data and it does not perform well on the test data as a result of high variance. Therefore, we must also check the log loss for the test set. At the bottom, we see that the best value of alpha is 0.1 as it not only reduces the log loss for the training set but also for the cross validation and the test set. By looking at the graph, therefore, we can conclude that the best value for the naive bayes classifier is 0.1 respectively. 
 
@@ -71,7 +92,7 @@ We also see from the image that there are a few points that are incorrectly clas
 
 
 
-## K Nearest Neighbor
+## 3.2 K Nearest Neighbor
 ![](Images/2020-12-22%20(29).png)
 We would be looking at an alternative model called K nearest neighbour. In this algorithm, we would be deciding the hyperparameter k which is nothing but the number of nearest neighbours which would be used for the prediction of the class of cancer. Therefore, we would be doing hyperparameter tuning and getting the accuracy of the model for different values of alpha before coming to the conclusion. We can see from the image that for the value of alpha = 5, we get the best accuracy for the training set. However, we are not sure whether the same model would be able to get the best accuracy for the test set. It turns out that the model is not overfitting and we are able to select the best value of alpha. For the value of alpha = 5, we are able to get the log loss in the test set to be 1.06 (approx) respectively.  
 
@@ -84,7 +105,7 @@ We have plotted the confusion matrix just to see how the predicted values and th
 ![](Images/2020-12-22%20(32).png)
 We have also plotted the precision and recall matrix for the K nearest neighbor algorithm. We see that there is a smooth diagonal in the case of precision matrix. In the recall matrix, however, we see that there is a bit of a misclassification for the class 8 which was classified as class 7. 
 
-## Logistic Regression
+## 3.3 Logistic Regression
 ![](Images/2020-12-22%20(33).png)
 We are currently using logistic regression model. Here we could see that there are small values to large values of alpha so the range of alpha values is large. We would be testing the log loss with different values of alpha for the training set and see how well the model does on the test set. We see that for the value of alpha = 0.001, the train log loss is about 0.69 respectively. Moreover, the model does not overfit in the case of the value of alpha being equal to 0.001 respectively. We see that the log loss for the cross validation and test set is 1.15 (approx) and 1.11 (approx) respectively. Therefore the log loss is pretty low for this model. 
 
@@ -97,8 +118,7 @@ We see the precision matrix and recall matrix in the above diagram. We can say t
 We would also be looking at the correctly classified points and understand the features present in the text that made them correctly classified. Therefore, we could be able to also interpret the model and the model is transparent to a large extent as we are able to see the features that made the output correct.
 ![](Images/2020-12-22%20(37).png)
 On the other hand in the above diagram, we see there are some incorrectly classified points. We see that due to the presence of a few features and words in the text, the model was not able to classify accurately the actual output. Therefore, we would look at these features and understand them so that in the future, we might either modify the values so that they give the correct output. 
-## Support Vector Machines (SVM)
-### This is a test file
+## 3.4 Support Vector Machines (SVM)
 ![](Images/2020-12-22%20(38).png)
 We use a classifier known as linear support vector machines. Here we find the values of C to get the best output. We have taken the values of C range to be large so that we see the deviation from the output and select the best hyperparameter. We find the best value of C is 0.0001 both on the trainig set and the test set. We find that with this value, the model does not either overfit or underfit. We can conclude that the model is doing well with the value of C being equal to 0.0001 respectively. 
 ![](Images/2020-12-22%20(39).png)
@@ -107,7 +127,7 @@ We have also plotted the precision and recall for the linear support vector mach
 We would also be taking a look at the feature importance and see to it as to why the classification is done depending on the features. We see that there are a few features that led the algorithm to correctly predict the output. Thus, we must also take these features into consideration when we are trying to reduce the dimensions of the matrix that we are giving to the machine learning model. 
 ![](Images/2020-12-22%20(41).png)
 We would also consider the incorrectly classified points and see the features that were responsible for the algorithm to misclassify. We see a few features that were responsible for the algorithm to not classify correctly. We were able to understand the features and we can try to eliminate or modify those features so that the algorithm would perform better by using feature engineering.
-## Random Forest Classifier
+## 3.5 Random Forest Classifier
 ![](Images/2020-12-22%20(42).png)
 We would now be using the random forest classifier. Here, we would consider the depth of the tree as the hyperparameter and decided the values of it such that the model does not overfit or underfit. We would be printing the log loss values for specific values of the depth of the tree. 
 ![](Images/2020-12-22%20(43).png)
@@ -125,7 +145,7 @@ We see that there are few incorrectly classified points and we find a few featur
 
 ![](Images/2020-12-24.png)
 
-## Conclusion 
+## 4.1 Conclusion 
 We see in the table above that there are a few modifications to the data and adding specific features to improve the accuracy of the model. We find that K Nearest Neighbours (KNN) performed the best compared to the other models without adding any new features to the datat set. We also see that we have added tfidf vectors to the text. We see that for the linear support vector machines with the addition of the TFIDF vectors, we find there is a reduction in the error by about 2 percent compared to the svm without tfidf vectors. We also see there is a reduction in error when we add the tfidf vectors for the logistic regression model. 
 
 
