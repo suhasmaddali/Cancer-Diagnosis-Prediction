@@ -68,7 +68,8 @@ We would also take a look at the index of genes that are associated with the dat
 ![](Images/2020-12-22%20(10)/png)
 We are also plotting the cumulative distribution of genes so that we take into consideration the frequency of the genes and add them with different types of genes to get a clear picture. 
 
-
+# 3 Machine Learning Models
+Machine learning algorithms are programs that can learn from data and improve from experience, without human intervention. Learning tasks may include learning the function that maps the input to the output, learning the hidden structure in unlabeled data; or ‘instance-based learning’, where a class label is produced for a new instance by comparing the new instance (row) to instances from the training data, which were stored in memory. ‘Instance-based learning’ does not create an abstraction from specific instances. The following below are some of the machine learning models used for predicting the type of cancer in a patient. 
 ## 3.1 Naive Bayes
 ![](Images/Naive_Bayes/2020-12-22%20(23).png)
 We choose different values of alpha to check how well the model does on the test set. We can see that in the training phase, we tend to see that the model does very well for the alpha value of 0.1 and we might conclude soon that this is the best value of alpha for naive bayes. There might be chances, however, that the model is overfitting to the training data and it does not perform well on the test data as a result of high variance. Therefore, we must also check the log loss for the test set. At the bottom, we see that the best value of alpha is 0.1 as it not only reduces the log loss for the training set but also for the cross validation and the test set. By looking at the graph, therefore, we can conclude that the best value for the naive bayes classifier is 0.1 respectively. 
