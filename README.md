@@ -1,4 +1,4 @@
-# Cancer Diagnosis Prediction
+# 👨‍⚕️ Cancer Diagnosis Prediction
 ## 1.1 Introduction
 This project was developed with the help of AppliedAI team based in India. 
 
@@ -152,6 +152,14 @@ We see that there are few incorrectly classified points and we find a few featur
 ## 4. Conclusion 
 We see in the table above that there are a few modifications to the data and adding specific features to improve the accuracy of the model. We find that K Nearest Neighbours (KNN) performed the best compared to the other models without adding any new features to the data set. We also see that we have added tfidf vectors to the text. We see that for the linear support vector machines with the addition of the TFIDF vectors, we find there is a reduction in the error by about 2 percent compared to the svm without tfidf vectors. We also see there is a reduction in error when we add the tfidf vectors for the logistic regression model. 
 
+## Directions to run the Ipython notebook 
+
+1. You'll have to download and install Git that could be used for cloning the repositories that are present. The link to download Git is https://git-scm.com/downloads.
+2. Once the Git is downloaded and installed, you'll have to right-click on the location where you would like to add the files or the repository. 
+3. You'll have to click on "Gitbash here" that would be opened when you right click on a particular location. 
+4. One the Gitbash terminal opens, you'll need to write "Git clone" and then copy the clipboard file that is present when you click on Code in Github. The link must be pasted and run so that the files would be downloaded at the location of interest. 
+5. Later, you'll need to use Anaconda Prompt and add "Jupyter notebook" in the prompt. 
+6. This would open the jupyter notebook that could be used to run and load the .ipynb files respectively. Therefore, you would be able to run the project at hand. 
 
 
 
