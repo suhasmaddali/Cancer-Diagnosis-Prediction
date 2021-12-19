@@ -155,14 +155,56 @@ We see that there are few incorrectly classified points and we find a few featur
 ## 4. Conclusion 
 We see in the table above that there are a few modifications to the data and adding specific features to improve the accuracy of the model. We find that K Nearest Neighbours (KNN) performed the best compared to the other models without adding any new features to the data set. We also see that we have added tfidf vectors to the text. We see that for the linear support vector machines with the addition of the TFIDF vectors, we find there is a reduction in the error by about 2 percent compared to the svm without tfidf vectors. We also see there is a reduction in error when we add the tfidf vectors for the logistic regression model. 
 
-## Directions to run the Ipython notebook 
+## Directions to download the repository and run the notebook 
+
+This is for the Washington Bike Demand Prediction repository. But the same steps could be followed for this repository. 
 
 1. You'll have to download and install Git that could be used for cloning the repositories that are present. The link to download Git is https://git-scm.com/downloads.
-2. Once "Git" is downloaded and installed, you'll have to right-click on the location where you would like to download this repository.  
+ 
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(14).png" width = "600"/>
+ 
+2. Once "Git" is downloaded and installed, you'll have to right-click on the location where you would like to download this repository. I would like to store it in "Git Folder" location. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(15).png" width = "600" />
+
 3. If you have successfully installed Git, you'll get an option called "Gitbash Here" when you right-click on a particular location. 
-4. Once the Gitbash terminal opens, you'll need to write "Git clone" and then paste the link of the repository. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(16).png" width = "600" />
+
+
+4. Once the Gitbash terminal opens, you'll need to write "Git clone" and then paste the link of the repository.
+ 
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(18).png" width = "600" />
+
 5. The link of the repository can be found when you click on "Code" (Green button) and then, there would be a html link just below. Therefore, the command to download a particular repository should be "Git clone html" where the html is replaced by the link to this repository. 
-6. Once downloaded, you might use the jupyter notebook to run the .ipynb files or other navigators to open this file. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(17).png" width = "600" />
+
+6. After successfully downloading the repository, there should be a folder with the name of the repository as can be seen below.
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(19).png" width = "600" />
+
+7. Once the repository is downloaded, go to the start button and search for "Anaconda Prompt" if you have anaconda installed. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(20).png" width = "600" />
+
+8. Later, open the jupyter notebook by writing "jupyter notebook" in the Anaconda prompt. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(21).png" width = "600" />
+
+9. Now the following would open with a list of directories. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(22).png" width = "600" />
+
+10. Search for the location where you have downloaded the repository. Be sure to open that folder. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(12).png" width = "600" />
+
+11. You might now run the .ipynb files present in the repository to open the notebook and the python code present in it. 
+
+&emsp;&emsp; <img src = "https://github.com/suhasmaddali/Images/blob/main/Screenshot%20(13).png" width = "600" />
+
+That's it, you should be able to read the code now. Thanks. 
 
 
 
