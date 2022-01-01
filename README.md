@@ -7,6 +7,8 @@ This project was developed with the help of AppliedAI team based in India.
 
 Based on the given set of features such as gene, mutation and text associated with a given data, the machine learning models would predict the type of cancer that a person would have under 9 classes. 
 
+<img src = "https://github.com/suhasmaddali/Cancer-Diagnosis-Prediction/blob/sprint1/Images/cancer%20image.jpg" width = "750" />
+
 
 The machine learning models that were used in the process of prediction were K Nearest Neighbors, Linear Support Vector Machines (SVM), Logistic Regression, Stacking Classifer, Voting Classifier and Random Forests Classifiers. 
 
