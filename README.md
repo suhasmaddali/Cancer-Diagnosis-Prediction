@@ -10,7 +10,7 @@ Based on the given set of features such as __gene__, __mutation__ and __text ass
 <img src = "https://github.com/suhasmaddali/Cancer-Diagnosis-Prediction/blob/sprint1/Images/cancer%20image.jpg"/>
 
 
-The machine learning models that were used in the process of prediction were K Nearest Neighbors, Linear Support Vector Machines (SVM), Logistic Regression, Stacking Classifer, Voting Classifier and Random Forests Classifiers. 
+The machine learning models that were used in the process of prediction were __K Nearest Neighbors__, __Linear Support Vector Machines (SVM)__, __Logistic Regression__, __Stacking Classifer__, __Voting Classifier__ and __Random Forests Classifiers__. 
 
 
 Given a set of input features such as gene, the type of mutation and the text that is associated with the gene and the mutation, the machine learning model could classify the chances of a person to suffer from cancer. In addition to this, it would also give an indication of the type of class of the cancer from 1 to 9. 
