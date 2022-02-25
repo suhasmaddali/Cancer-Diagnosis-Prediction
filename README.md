@@ -6,11 +6,7 @@
 __Note:__ This project was developed with the help of [__AppliedAI__](https://www.appliedaicourse.com/) based in India. 
 
 ```diff
-- text in red
 + Note: This project was developed with the help of https://www.appliedaicourse.com/ based in India.
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
 ```
 
 Based on the given set of features such as __gene__, __mutation__ and __text associated__ with a given data, the machine learning models would predict the type of cancer that a person would have under 9 classes. 
